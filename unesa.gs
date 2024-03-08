@@ -27,7 +27,7 @@ function createAndRenameSheets() {
     var filterValue = sheetsData[i].filterValue;
     
     var newSheet = spreadsheet.insertSheet(sheetName); // Membuat sheet baru
-    var range = newSheet.getRange("A1"); // Mendapatkan range cell A1 di sheet baru
+    var range = newSheet.getRange("A2"); // Mendapatkan range cell A2 di sheet baru
     range.setFormula('=FILTER(Master!A:G, Master!G:G="' + filterValue + '")'); // Set rumus pada cell A1
   }
 }
