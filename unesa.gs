@@ -29,7 +29,7 @@ function createAndRenameSheets() {
     var newSheet = spreadsheet.insertSheet(sheetName); // Membuat sheet baru
     var range = newSheet.getRange("A2"); // Mendapatkan range cell A2 di sheet baru
     range.setFormula('=FILTER(Master!A:G, Master!G:G="' + filterValue + '")'); // Set rumus pada cell A2
-    
+
     // Menyalin dan menempelkan data dari sel A1:G1 di sheet master ke setiap sheet baru
     var sourceRange = masterSheet.getRange("A1:G1");
     sourceRange.copyTo(newSheet.getRange("A1"), SpreadsheetApp.CopyPasteType.PASTE_VALUES);
