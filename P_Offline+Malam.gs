@@ -4,7 +4,6 @@ function createAndRenameSheets() {
   
   // Array of sheet names and filter values
   var sheetsData = [
-    { name: "Auditorium Pagi", filterValue: "Auditorium Pagi" },
     { name: "Room A Pagi", filterValue: "Room A Pagi" },
     { name: "Room B Pagi", filterValue: "Room B Pagi" },
     { name: "Room C Pagi", filterValue: "Room C Pagi" },
